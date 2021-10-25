@@ -196,9 +196,10 @@ body.lock {
 }
 
 .login>textarea {
+    resize: vertical;
     margin: 10px auto;
     width: 260px;
-    height: 50px;
+    min-height: 100px;
     max-width: 280px;
     max-height: 100px;
     align-self: center;
@@ -240,9 +241,42 @@ input::placeholder {
     transition: 300ms;
 }
 
-.checkbox {
-    transform: translateX(10px);
+input[type="checkbox"] {
+    display: none;
 }
+
+
+.checkbox__label {
+    display: inline-flex;
+}
+
+.checkbox__label::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    background-color: #000;
+    margin-right: 10px;
+    transition: .2s;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked+label::before {
+    content: "";
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 50px;
+    background-color: #ff4899;
+}
+
+.checkbox__label a {
+    color: #ff4899;
+    margin-left: 3px;
+    text-decoration: none;
+}
+
+
 
 .button__form {
     font-size: 18px;

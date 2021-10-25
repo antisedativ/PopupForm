@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpeg">
+    <link rel="stylesheet" href="magnific-popup.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.magnific-popup.js"></script>
     <title>Contact Form</title>
 </head>
 
@@ -15,11 +19,11 @@
         <span class="button__line button__line-right"></span>
         <span class="button__line button__line-bottom"></span>
         <span class="button__line button__line-left"></span>
-        Neon Button
+        Click me
     </a>
 
     <div id="popup" class="popup">
-        <a href="" class="popup__area"></a>
+        <a href="#" class="popup__area"></a>
         <div class="popup__body">
             <div class="popup__content">
                 <div class="popup__form">
@@ -37,13 +41,14 @@
                     <form action="#" class="login">
                         <a href="#" data-close class="popup__close">&times;</a>
                         <div class="popup__title">Сontact Us</div>
-                        <input type="email" placeholder="Email" id="email">
-                        <input type="text" placeholder="Username" id="username">
-                        <input type="password" placeholder="Password" id="password">
+                        <input type="email" placeholder="Email" id="email" name="email">
+                        <input type="text" placeholder="Username" id="username" name="username">
+                        <input type="password" placeholder="Password" id="password" name="password">
                         <textarea name="comments" rows="5" cols="30" placeholder="Comment or Message"></textarea>
                         <div class="checkbox">
-                            <input type="checkbox" id="check">
-                            <label for="check">I Agree to Privacy Policy</label>
+                            <input id="formAgreement" type="checkbox" class="checkbox__input" name="checkbox">
+                            <label for="formAgreement" class="checkbox__label">I Agree to <a
+                                    href="https://www.kubsu.ru/"> Privacy Policy</a></label>
                         </div>
                         <button class="button__form">SUBMIT</button>
                     </form>
@@ -51,7 +56,7 @@
             </div>
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 
