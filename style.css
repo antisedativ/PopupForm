@@ -181,6 +181,7 @@ body.lock {
     font-family: 'Raleway',
         sans-serif;
     text-align: center;
+    margin-bottom: 15px;
     font-size: 25px;
     text-transform: uppercase;
 }
