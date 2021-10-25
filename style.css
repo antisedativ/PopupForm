@@ -262,7 +262,7 @@ input[type="checkbox"] {
     border-radius: 2px;
 }
 
-input[type="checkbox"]:checked+label::before {
+.checkbox:checked label::before {
     content: "";
     text-align: center;
     font-family: sans-serif;
@@ -270,7 +270,7 @@ input[type="checkbox"]:checked+label::before {
     background-color: #ff4899;
 }
 
-.checkbox__label a {
+a .checkbox__label {
     color: #ff4899;
     margin-left: 3px;
     text-decoration: none;
