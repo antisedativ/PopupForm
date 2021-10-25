@@ -247,30 +247,34 @@ input[type="checkbox"] {
 
 
 .checkbox__label {
+    font-size: 17px;
     display: inline-flex;
 }
 
 .checkbox__label::before {
+    cursor: pointer;
     content: "";
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-top: 2px;
-    background-color: #000;
+    background-color: #fff;
+    border: 2px solid rgb(150, 150, 150);
     margin-right: 10px;
     transition: .2s;
     border-radius: 2px;
 }
 
-.checkbox:checked label::before {
+input[type='checkbox']:checked+label::before {
     content: "";
     text-align: center;
     font-family: sans-serif;
     border-radius: 50px;
+    border: 2px solid rgb(150, 150, 150);
     background-color: #ff4899;
 }
 
-a .checkbox__label {
+.checkbox__label>a {
     color: #ff4899;
     margin-left: 3px;
     text-decoration: none;
