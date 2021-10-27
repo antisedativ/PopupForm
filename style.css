@@ -28,7 +28,7 @@ body.lock {
     color: #2196f3;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     letter-spacing: 4px;
     overflow: hidden;
     transition: 0.2s;
@@ -315,4 +315,15 @@ input::placeholder {
     background: #ff4899;
     transition: 200ms;
 
+}
+
+/* footer */
+.footer {
+    font-size: 20px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
 }
