@@ -335,12 +335,12 @@ input::placeholder {
     body {
         max-width: 100%;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .button {
-        color: #ff4899;
-        /* color: #333;
-        background-color: #ff4899; */
+        color: #333;
+        background-color: #ff4899;
         box-shadow:
             0 0 5px #ff4899,
             0 0 20px #ff4899,
