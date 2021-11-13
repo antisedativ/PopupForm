@@ -328,3 +328,49 @@ input::placeholder {
     width: 100%;
     text-align: center;
 }
+
+@media screen and (max-width:425px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .button {
+        color: #ff4899;
+        /* color: #333;
+        background-color: #ff4899; */
+        box-shadow:
+            0 0 5px #ff4899,
+            0 0 20px #ff4899,
+            0 0 60px #ff4899;
+        border: 2px solid #ff4899;
+        border-radius: 40px;
+    }
+
+    .button__line,
+    .button__line-top,
+    .button__line-left,
+    .button__line-bottom,
+    .button__line-right {
+        display: none;
+    }
+
+    .popup__body {
+        padding: 40px 10px;
+
+    }
+
+    .popup__content {
+        background-color: #fff;
+        color: #000;
+        max-width: 400px;
+        padding: 0;
+        position: relative;
+        transition: all .8s ease 0s;
+        opacity: 0;
+        border-radius: 10px;
+        transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    }
+}
