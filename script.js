@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('.popup').magnificPopup();
 
 
@@ -15,4 +16,5 @@ $(document).ready(function () {
         });
     });
     return false;
+
 });
